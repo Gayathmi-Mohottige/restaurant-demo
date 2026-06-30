@@ -54,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.25 }}
-          className="mx-auto mt-7 max-w-md text-base text-ash"
+          className="mx-auto mt-7 max-w-md text-base text-cream"
         >
           A wood-fired grill where every plate meets the embers. Twelve seats at
           the fire. Reservations open nightly from 6pm.
