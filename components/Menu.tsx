@@ -31,7 +31,7 @@ const sections: { heading: string; dishes: Dish[] }[] = [
 
 export default function Menu() {
   return (
-    <section id="menu" className="bg-charcoal-soft py-28 md:py-36">
+    <section id="menu" className="bg-charcoal-soft py-16 md:py-24">
       <div className="mx-auto max-w-5xl px-6">
         <Reveal className="text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-ember">The Menu</p>

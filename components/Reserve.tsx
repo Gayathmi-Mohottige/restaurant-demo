@@ -42,7 +42,7 @@ export default function Reserve() {
 
   if (status === "done") {
     return (
-      <section id="reserve" className="bg-charcoal-soft py-28 md:py-36">
+      <section id="reserve" className="bg-charcoal-soft py-16 md:py-24">
         <div className="mx-auto max-w-md px-6 text-center">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-ember/15 text-ember">
             <Check className="h-8 w-8" />
@@ -61,7 +61,7 @@ export default function Reserve() {
   }
 
   return (
-    <section id="reserve" className="bg-charcoal-soft py-28 md:py-36">
+    <section id="reserve" className="bg-charcoal-soft py-16 md:py-24">
       <div className="mx-auto max-w-2xl px-6">
         <Reveal className="text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-ember">

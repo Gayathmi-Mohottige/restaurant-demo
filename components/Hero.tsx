@@ -43,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1 }}
-          className="font-display text-6xl leading-[0.95] tracking-tight text-cream sm:text-7xl md:text-8xl"
+          className="font-display text-5xl leading-[0.95] tracking-tight text-cream sm:text-7xl md:text-8xl"
         >
           Cooked over
           <br />

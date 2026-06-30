@@ -1,15 +1,15 @@
 import Reveal from "./Reveal";
 
 const STORY_IMAGE =
-  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80";
+  "https://images.unsplash.com/photo-1607018244619-dab6235709dd?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=1200&q=80";
 
 export default function Story() {
   return (
-    <section id="story" className="mx-auto max-w-6xl px-6 py-28 md:py-36">
-      <div className="grid items-center gap-14 md:grid-cols-2">
+    <section id="story" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+      <div className="grid items-stretch gap-10 md:grid-cols-2 md:gap-14">
         <Reveal>
           <div
-            className="aspect-[4/5] w-full rounded-2xl bg-cover bg-center shadow-2xl shadow-black/50"
+            className="aspect-[4/3] w-full rounded-2xl bg-cover bg-center shadow-2xl shadow-black/50 sm:aspect-[3/2] md:aspect-auto md:h-full md:min-h-[440px]"
             style={{ backgroundImage: `url(${STORY_IMAGE})` }}
             role="img"
             aria-label="The open kitchen at Ember & Oak"
@@ -33,7 +33,7 @@ export default function Story() {
             tender at the center, seasoned by the fire itself.
           </p>
 
-          <div className="mt-10 flex gap-10">
+          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-6 sm:gap-x-10">
             <div>
               <p className="font-display text-3xl text-ember">1100&deg;</p>
               <p className="mt-1 text-sm text-ash">peak coal heat</p>
