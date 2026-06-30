@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ====== EMBER & OAK — wood-fired grill ====== */
+/* Direction: dark, charred, candlelit. Ember glow is the signature. */
+
+@theme {
+  --color-charcoal: #17120f;       /* deep charred background */
+  --color-charcoal-soft: #211a15;  /* raised surfaces / cards */
+  --color-cream: #f0e7d8;          /* primary text on dark */
+  --color-ash: #9b8f82;            /* muted secondary text */
+  --color-ember: #e2622b;          /* the fire — accent */
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Ember glow utility — used behind the hero wordmark */
+.ember-glow {
+  background: radial-gradient(
+    closest-side,
+    rgba(226, 98, 43, 0.35),
+    rgba(226, 98, 43, 0.08) 60%,
+    transparent 100%
+  );
+}
+
+/* Thin ember rule used as a section divider */
+.ember-rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(226, 98, 43, 0.6),
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
 }
