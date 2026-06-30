@@ -15,11 +15,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ember & Oak — Wood-Fired Grill",
+  title: "Ember & Oak Wood-Fired Grill",
   description:
     "A wood-fired grill in the heart of the city. Live fire, aged cuts, natural wine. Reservations open nightly.",
   openGraph: {
-    title: "Ember & Oak — Wood-Fired Grill",
+    title: "Ember & Oak Wood-Fired Grill",
     description: "Live fire, aged cuts, natural wine. Reservations open nightly.",
     type: "website",
   },
